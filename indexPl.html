@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Places and More</title>
+    <meta charset="utf-8">
+</head>
+
+
+  <body>
+
+    <div>
+      <input id="pac-input" type="text" placeholder="Type Location">
+      <input id="searchBut" type="button" value="Search">
+    </div>
+
+    <div id="map"></div>
+
+    <div class="sideBar">
+        <div id="menu"></div>
+    </div>
+
+    <div id="bigPhoto"></div>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9hT8Ig_KgmkwHfyli98Y4fzlLFqBXUJ0&libraries=places&callback=initMap" async defer></script>
+    <script src ="searchPlace.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="jqueryStyle.css"/>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="gentleSelect/jquery-gentleSelect.css"/>
+    <script src="gentleSelect/jquery-gentleSelect-min.js"></script>-->
+  </body>
+
+
+</html>
