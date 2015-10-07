@@ -1,0 +1,24 @@
+This web applicaton uses the Places Library from the Google Maps Javascript API to provide three functionalities for a user who is either interested in knowing more about a location/establishment and further would like to explore nearby places. 
+
+1. Initial View
+When the application loads the map is centered on San Francisco, CA. A search box with a search initiation button is provided at the top left. The search box is powered by the autocomplete functionality to aid the user in finding places. As the user fills characters/words the search box will provide matching dropdown options. When the location of choice is shown the user can click on the option so that the searchbox is filled with it. Next the user has to press the search button. The view will be centered on the location and a red marker will be provided to designate the location. 
+
+Simultaniously a sidebar will appear from the left side of the screen with a slight animation. This animation is provided in order to gain the user's attention and signify addition of functionalities.    
+
+
+2. Functionalities
+I have provided two functionalities by displaying the information provided directly by the location search and one functionality derived by using the location. All of these functionalities are provided through a sidebar on the left side of the screen. Each tab in the sidebar can be expanded by clicking on the individual panel.
+
+2a. Place Info
+The Place Info panel provides an icon(showing the type of location/establishment), the formatted address, the international telephone number and a hyperlink to the website of that location/establishment(link opens in a new tab so that the user can toggle between the map and the website). 
+
+2b. Nearby
+The Nearby panel is the functionality derived from the location. When clicked on the panel a dropdown menu is shown to the user. This menu consists of 96 different types of establishments. By clicking on any type the user can view establishements of that type in the vicinity of the main location. The application will render markers for the "nearby places" in blue color. This is for two reasons: 1. ease of differentiating "nearby places" from the main location and 2. for the user to get a visual approximation of the direction and proximity from the main location.
+
+Everytime the user changes the type of establishment the application will remove the earlier markers and render the new establishment type markers.
+
+2c. Photos
+The Photos panel provides a chance for the user to view real life photos of the location/establishments if such photos are uploaded. The panel provides a thumbnail of the first photo when the panel is expanded. On clicking the thumbnail a bigger version of the first photo is provided below the photo panel. The user can then use the right and left arrow keys to browse through the photos. Care is taken to make sure the user interaction does not lead to beyind-bounds accessing of the photos array. The photos browsing can be exitted by pressing the Escape key on the keyboard.  
+
+Future additions:
+Since my aim was to present my Javascript skills for a more functional UI, I am continuing addition of two more UI elements to the application. One to provide current weather data along with a 24 hour prediction for that location and second an analytical overview of the 'nearby' functionality as opposed to the filters(price, rating, hours) provided by Google Maps on their 'nearby' functionality.
